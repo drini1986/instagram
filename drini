@@ -1,3 +1,4 @@
+
 string4=$(openssl rand -hex 32 | cut -c 1-4)
 string8=$(openssl rand -hex 32  | cut -c 1-8)
 string12=$(openssl rand -hex 32 | cut -c 1-12)
@@ -409,15 +410,13 @@ sleep 5
 
 username_id=$(curl -L -s 'https://www.instagram.com/'$user'' > getid && grep -o  'profilePage_[0-9]*.' getid | cut -d "_" -f2 | tr -d '"')
 
-
 ola_viol="1664921829"
 elsahajdari_="10599360288"
 deboracairesmorais="43988167760"
 _henriq_pedro="1465957982"
 
-
 if [[ ! -e celeb_id ]]; then
-printf "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" $ola_viol $elsahajdari_ $deboracairesmorais $_henriq_pedro > celeb_id
+printf "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" $ola_viol $yrkyoungin__ $elsahajdari_ $deboracairesmorais $_henriq_pedro   > celeb_id
 fi
 
 while [[ true ]]; do
