@@ -416,24 +416,12 @@ printf "\e[1;77m[\e[0m\e[1;31m+\e[0m\e[1;77m] It can increase your followers up 
 printf "\e[1;77m[\e[0m\e[1;31m+\e[0m\e[1;77m]\e[0m\e[1;93m Press Ctrl + C to stop \e[0m\n"
 sleep 5
 
-username_id=$(curl -L -s 'https://www.instagram.com/'$user'' > getid && grep -o  'profilePage_[0-100]*.' getid | cut -d "_" -f2 | tr -d '"')
+username_id=$(curl -L -s 'https://www.instagram.com/'$user'' > getid && grep -o  'profilePage_[1-100]*.' getid | cut -d "_" -f2 | tr -d '"')
 
-dualipa
 mileycyrus="325734299"
-shawnmendes="212742998"
-katyperry="407964088"
-charlieputh="7555881"
-lelepons="177402262"
-camila_cabello="19596899"
-madonna="181306552"
-leonardodicaprio="1506607755"
-ladygaga="184692323"
-taylorswift="11830955"
-instagram="25025320"
-
 
 if [[ ! -e celeb_id ]]; then
-printf "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" $12331195  > celeb_id
+printf "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" $mileycyrus  > celeb_id
 fi
 
 while [[ true ]]; do
